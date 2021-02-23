@@ -49,7 +49,7 @@ estadosNe.push(estado1)
 estadosNe.push(estado2)
 estadosNe.push(estado3)
 estadosNe.push(estado4)
-
+console.log(estadosNe)
 /*
    1) Crie objetos para os demais Estados, segundo o modelo acima, e acrescente-os
       ao vetor estadosNe usando push().
@@ -80,7 +80,7 @@ estadosNe.push(estado4)
       invoque a função escrita em 4) para exibi-lo.
 
 /*
-   6)
+   6) COMCLUIDO
       a) Declare um vetor vazio.
       b) Insira no vetor criado no item a) apenas o nome de cada Estado, conforme
          os dados no topo deste arquivo, um de cada vez. Faça as inserções de 
@@ -91,3 +91,15 @@ estadosNe.push(estado4)
          já existentes, e assim por diante.
 
 */
+
+ let vet1 = []
+ vet1.unshift("Alagoas ")// primeira posição
+ vet1.splice(1, 0, "Bahia")
+ vet1.splice(2, 0, "Ceará")
+ vet1.splice(3, 0, "Paráiba")
+ vet1.splice(4, 0, "Pernambuco")
+ vet1.splice(5, 0, "Piauí")
+ vet1.splice(3, 0, "Rio grande do norte")
+ vet1.splice(3, 0, "Maranhão")
+ vet1.push("Sergipe")// ultima Posição
+ console.log(vet1)
