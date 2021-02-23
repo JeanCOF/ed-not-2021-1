@@ -35,15 +35,15 @@ console.log(pessoa["cidade de origem"])
 // a sintaxe dos colchetes sempre funciona , mesmo se o nome da propriedade
 //for uma unica palavra sem acento 
 console.log(pessoa["nome"])
-console.log(pessoa["gosotos"][2])// mostra o segundo valor do vetor 
+console.log(pessoa["gostos"][2])// mostra o segundo valor do vetor 
 
 // outra consequencia da sintaxe dos colchetes é a possibilidade de 
 //usar nomes de propreidades que estão dentro de variveis 
 
 let x = "sexo"
 console.log(pessoa[x])
-let x = "dataNasc"
-console.log(pessoa[x])
+let x1 = "dataNasc"
+console.log(pessoa[x1])
 
 // Criando uma nova propriedade para um obejto já existente 
 // basta atribuir um valor a um nome de propriedade ainda não existente
@@ -61,3 +61,31 @@ carro["combústivel"] = "gasolina"
 carro.cor = 'bege'
 
 console.table(carro)
+
+// Excluindo uma propriedade de um objeto 
+delete carro.ano
+
+console.table(carro)
+
+console.log("--------------------------------------")
+
+//Excluindo todas as propriedades de um objeto
+//for... in determina quais as propriedades de um objeto e 
+//coloca cada uma delas em uma variavel informada pelo 
+//usuario (p, no caso ) a cada interção do loop
+for(let p in pessoa){
+    console.log(p)
+}
+
+console.log("--------------------------------")
+
+for( let p in carro) {
+    console.log(p)
+}
+
+console.log("--------------------------------")
+
+//For ... in para listar propriedades e valores de um objeto 
+for(let atrib in pessoa){
+    console.log(atrib + " -> " + pessoa[atrib])
+}
