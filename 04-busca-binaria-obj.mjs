@@ -34,3 +34,4 @@ let comps
     else if (busca < obj.first_name) return - 1
     else return 1
  }
+}
